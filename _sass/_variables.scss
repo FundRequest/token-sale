@@ -1,0 +1,46 @@
+// Algemeen
+
+$bodyText: 'Whitney Book', Helvetica, Arial, sans-serif;
+$specialText: 'CooperHewitt Book', Helvetica, Arial, sans-serif;
+$specialTextMedium: 'CooperHewitt Medium', Helvetica, Arial, sans-serif;
+$specialTextSemibold: 'CooperHewitt Semibold', Helvetica, Arial, sans-serif;
+$specialTextBold: 'CooperHewitt Bold', Helvetica, Arial, sans-serif;
+$textCondensed: 'Asap Condensed', Helvetica, Arial, sans-serif;
+$bodyTextSize: 18px;
+$bigTitleSize: 60px;
+$mediumTitleSize: 36px;
+
+$marginBottomSm: 30px;
+$bigPadding: 110px 0;
+
+@media screen and (max-width: 767px){
+	$marginBottomSm: 15px;	
+}
+
+// Colors
+$primaryColorText: #000;
+$secondaryColorText: #40a6da;
+$hoverColorText: #40a6da;
+$footerColorText: #f48b48;
+
+// Buttons
+
+$smallBtnWidth: 125px;
+
+// Navigation
+
+$navHeight: 115px;
+$navPadding: 40px;
+$navBgColor: transparent;
+$navBorder: none;
+$navBorderRadius: 0;
+
+$logoBreedte: 270px;
+
+$navLinkPadding: 15px;
+$smallNavFont: 12px;
+$bigNavFont: 14px;
+
+$smallNavColor: #000000;
+$bigNavColor: $secondaryColorText;
+$bigNavHover: $hoverColorText;
