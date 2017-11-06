@@ -132,5 +132,37 @@ jQuery( document ).ready(function() {
         offset_top: 100,
     });
 
+    // ========== PIE CHART ========== //
+    window.onload = function() { 
+        $("#chartContainer").CanvasJSChart({ 
+            backgroundColor: "transparent",
+
+            legend :{ 
+                verticalAlign: "center", 
+                horizontalAlign: "right",
+                fontSize: '14',
+            }, 
+            data: [ 
+            { 
+                type: "pie", 
+                showInLegend: true, 
+                startAngle: -90,
+                indexLabelPlacement: "inside",
+                indexLabelFontColor: "#ffffff",
+                indexLabelFontFamily: "Whitney Book",
+                indexLabelFontSize: "16",
+                toolTipContent: "{label} <br/> {y} %",
+                indexLabel: "{y} %", 
+                dataPoints: [ 
+                    { label: "Token Sale",  y: 40, legendText: "40 - Token Sale", color: "#727bbb"},
+                    { label: "Ecosystem incentivization",   y: 30, legendText: "30 - Ecosystem incentivization", color: "#64c7f3" },
+                    { label: "Cold Storage",    y: 10, legendText: "10 - Cold Storage", color: "#f9b568" }, 
+                    { label: "Founders",   y: 18,  legendText: "18 - Founders", color: "#91c571" }, 
+                    { label: "Advisors",       y: 2,  legendText: "2 - Advisors", color: "#6f3d79" }, 
+                ] 
+            } 
+            ] 
+        }); 
+    }
 
 });
