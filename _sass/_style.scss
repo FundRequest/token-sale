@@ -708,6 +708,7 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 			font-size: 36px;
 			margin-bottom: 0px;
 			color: #fff;
+			padding: 0 10px;
 		}
 		span {
 			font-family: $specialText;
@@ -1104,6 +1105,13 @@ footer {
 			}
 		}
 	}
+	.token-highlights {
+		.col-sm-4.text-center {
+			h3 {
+				font-size: 28px;
+			}
+		}
+	}
 }
 @media screen and (max-width: 1300px){
 	.token-highlights {
@@ -1365,7 +1373,7 @@ footer {
 }
 @media screen and (max-width: 600px){
 	body, html {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	h1, h2 {
 		font-size: 36px;
@@ -1409,7 +1417,7 @@ footer {
 }
 @media screen and (max-width: 480px){
 	body, html {
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.3em;
 	}
 	h1, h2 {
