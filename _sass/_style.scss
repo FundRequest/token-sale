@@ -622,6 +622,22 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 	.col-lg-6.vertical-align {
 		margin-top: -81px;
 	}
+	.bigbtn {
+		.smallBtn {
+			background-color: $footerColorText;
+			font-style: italic;
+			border-color: transparent;
+			text-transform: none;
+			font-family: $specialTextBold;
+			font-size: 36px;
+			padding-top: 20px;
+		}
+		.smallBtn:hover {
+			color: $footerColorText;
+			background-color: transparent;
+			border-color: $footerColorText;
+		}
+	}
 }
 
 /* ========== ABOUT ========== */
@@ -681,18 +697,59 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 		background-repeat: no-repeat;
 	}
 }
+.token-highlights {
+	margin-bottom: 15px;
+	.col-sm-4.text-center {
+		color: #fff;
+		margin-bottom: 15px;
+
+		h3 {
+			font-family: $specialTextBold;
+			font-size: 36px;
+			margin-bottom: 0px;
+			color: #fff;
+		}
+		span {
+			font-family: $specialText;
+			font-size: 22px;
+		}
+		.vertical-align {
+			padding-top: 5px;
+		}
+		.bgcolor {
+			height: 145px;
+		}
+		.oranje {
+			background-color: $footerColorText;
+		}
+		.blauw {
+			background-color: $hoverColorText;
+		}
+		.groen {
+			background-color: #38b464;
+		}
+	}
+}
 .whitelist {
-	i, .icon-slack {
+	i, .icon-rocketchat {
 		font-size: 111px;
+	}
+	.icon-rocketchat {
+		font-size: 120px;
 	}
 	i.icon-icon-telegram {
 		color: #1ab5e7;
 	}
-	i, .icon-slack span:before {
+	i, .icon-rocketchat span:before {
 		-webkit-transition: all .35s;
 		transition: all .35s;
 	}
-	a:hover i.icon-icon-telegram, a:hover .icon-slack span:before {
+	a:hover i.icon-icon-telegram,
+	a:hover .icon-rocketchat span.path1:before,
+	a:hover .icon-rocketchat span.path3:before,
+	a:hover .icon-rocketchat span.path4:before,
+	a:hover .icon-rocketchat span.path5:before,
+	a:hover .icon-rocketchat span.path6:before {
 		color: #f48b48;
 	}
 }
@@ -1004,9 +1061,11 @@ footer {
 	.header {
 		h1 {
 			font-size: 70px;
+			position: relative;
 		}
 		h2 {
 			font-size: 48.5px;
+			position: relative;
 		}
 		.countdownHolder{
 			font: 57px/.8 "CooperHewitt Bold", sans-serif;
@@ -1024,6 +1083,13 @@ footer {
 			max-width: 600px;
 		}
 	}
+	.token-highlights {
+		.col-sm-4.text-center {
+			h3 {
+				font-size: 30px;
+			}
+		}
+	}
 }
 @media screen and (max-width: 1400px){
 	.sidebarnav {
@@ -1035,6 +1101,21 @@ footer {
 						font-size: 20px;
 					}
 				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1300px){
+	.token-highlights {
+		.col-sm-4.text-center {
+			h3 {
+				font-size: 24px;
+			}
+			span {
+				font-size: 16px;
+			}
+			.bgcolor {
+				height: 125px;
 			}
 		}
 	}
@@ -1078,6 +1159,18 @@ footer {
 	}
 	.header .hidden-lg .cta-huls {
 		position: relative;
+	}
+}
+@media screen and (max-width: 1100px){
+	.token-highlights {
+		.col-sm-4.text-center {
+			h3 {
+				font-size: 20px;
+			}
+			.bgcolor {
+				height: 115px;
+			}
+		}
 	}
 }
 @media screen and (min-width: 992px){
@@ -1224,6 +1317,12 @@ footer {
 			    min-height: 30px;
     			height: 35px;
     			padding-top: 0px;
+    			margin-top: 5px;
+			}
+			.bigbtn {
+				.smallBtn {
+					font-size: 18px;
+				}
 			}
 		}
 
