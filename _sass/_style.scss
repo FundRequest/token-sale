@@ -625,10 +625,9 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 	.bigbtn {
 		.smallBtn {
 			background-color: $footerColorText;
-			font-style: italic;
 			border-color: transparent;
 			text-transform: none;
-			font-family: $specialTextBold;
+			font-family: $specialTextSemibold;
 			font-size: 36px;
 			padding-top: 20px;
 		}
