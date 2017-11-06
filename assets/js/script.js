@@ -1,3 +1,5 @@
+var scrolloffset = 20;
+
 jQuery( document ).ready(function() {
 
     // ========== PRELOADER ========== //
@@ -71,15 +73,17 @@ jQuery( document ).ready(function() {
     });
 
     function updateNavigation() {
+    	var activeSection = 0;
         contentSections.each(function(){
             $this = jQuery(this);
-            var activeSection = jQuery('.vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
-            if ( ( $this.offset().top - jQuery(window).height()/2 < jQuery(window).scrollTop() ) && ( $this.offset().top + $this.height() - jQuery(window).height()/2 > jQuery(window).scrollTop() ) ) {
-                navigationItems.eq(activeSection).addClass('is-selected');
-            }else {
-                navigationItems.eq(activeSection).removeClass('is-selected');
+            var thisSection = jQuery('.vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
+            if ( ( $this.offset().top - scrolloffset < jQuery(window).scrollTop() ) && ( $this.offset().top + $this.outerHeight() - scrolloffset > jQuery(window).scrollTop() ) ) {
+                if(thisSection > activeSection)
+                	activeSection = thisSection;
             }
         });
+        navigationItems.not(':eq(' +activeSection+')').removeClass('is-selected');
+        navigationItems.eq(activeSection).addClass('is-selected');
     }
 
     function smoothScroll(target) {
