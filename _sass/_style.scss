@@ -867,6 +867,21 @@ p {
 footer {
 	margin-top: 200px;
 }
+.footer_references { 
+	background-color: #40a6da;
+
+	#slider_references {
+		margin: 0 auto;
+		img {
+			max-height: 30px;
+		}
+	}
+
+	.lSSlideOuter {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
 /* ---------- TEAM ---------- */
 .team {
 	background-color: #e9e9e9;
@@ -1532,4 +1547,11 @@ footer {
 	h3 {
 		font-size: 20px;
 	}
+}
+
+.cS-hidden {
+    height: 1px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
 }

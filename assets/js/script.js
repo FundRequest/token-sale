@@ -122,6 +122,9 @@ jQuery( document ).ready(function() {
             jQuery('html, body').animate({
               scrollTop: target.offset().top - 0
             }, 1000);
+
+			jQuery('.navbar-collapse').collapse('hide');
+
             return false;
           }
         }
@@ -164,5 +167,14 @@ jQuery( document ).ready(function() {
             ] 
         }); 
     }
+
+    jQuery('#slider_references').lightSlider({
+        autoWidth:true,
+        loop:false,
+        slideMargin:20,
+        onSliderLoad: function() {
+            jQuery('#slider_references').removeClass('cS-hidden');
+        } 
+    });  
 
 });
