@@ -114,7 +114,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak: none; 
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -128,7 +128,7 @@
 
 .icon-rocketchat .path1:before {
   content: "\e90f";
-  color: rgb(204, 51, 51);
+  color: rgb(255, 255, 255);
 }
 .icon-rocketchat .path2:before {
   content: "\e910";
@@ -138,22 +138,22 @@
 .icon-rocketchat .path3:before {
   content: "\e911";
   margin-left: -1em;
-  color: rgb(204, 51, 51);
+  color: rgb(244, 139, 72);
 }
 .icon-rocketchat .path4:before {
   content: "\e912";
   margin-left: -1em;
-  color: rgb(204, 51, 51);
+  color: rgb(244, 139, 72);
 }
 .icon-rocketchat .path5:before {
   content: "\e913";
   margin-left: -1em;
-  color: rgb(204, 51, 51);
+  color: rgb(244, 139, 72);
 }
 .icon-rocketchat .path6:before {
   content: "\e914";
   margin-left: -1em;
-  color: rgb(204, 204, 204);
+  color: rgb(255, 255, 255);
 }
 .icon-slack .path1:before {
   content: "\e902";
