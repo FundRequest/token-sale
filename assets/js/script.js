@@ -172,6 +172,7 @@ jQuery( document ).ready(function() {
         autoWidth:true,
         loop:false,
         slideMargin:20,
+        controls: false,
         onSliderLoad: function() {
             jQuery('#slider_references').removeClass('cS-hidden');
         } 
