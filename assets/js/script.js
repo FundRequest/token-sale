@@ -176,6 +176,12 @@ jQuery( document ).ready(function() {
         onSliderLoad: function() {
             jQuery('#slider_references').removeClass('cS-hidden');
         } 
-    });  
+    });
+
+  $('.smallBtnDisabled, .registerbtn').click(function(e){
+    e.preventDefault();
+  });
+
+
 
 });

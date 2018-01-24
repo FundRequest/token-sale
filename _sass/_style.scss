@@ -48,7 +48,19 @@ select {
 	color: #fff;
 	background-color: $hoverColorText;
 	text-decoration: none;
+    &.smallBtnDisabled:hover &.header &.bigbtn {
+      cursor: not-allowed;
+      background-color: gray;
+      color: lightgray;
+      border-color: lightgray;
+      text-decoration: none;
+    }
 }
+
+.header .bigbtn .smallBtn .smallBtnDisabled {
+  background-color: gray;
+}
+
 .playbtn {
 	position: absolute;
 	display: block;
@@ -136,7 +148,7 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 	padding-top: $navPadding;
 	padding-bottom: 0;
 	margin-bottom: 0;
-	
+
 	.navbar-header {
 		padding: 0 15px;
 
@@ -306,7 +318,7 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 	.registerbtn {
 		display: block;
 		float: left;
-		background-color: $footerColorText;
+		background-color: gray;
 		border-radius: 4px;
 		color: #fff;
 		font-size: 24px;
@@ -314,7 +326,11 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 		padding: 6.5px 15px;
 		margin-top: 6px;
 		font-weight: bold;
+
 	}
+  .registerbtn:hover{
+    cursor: not-allowed;
+  }
 	.navbar-right.hidden-sm {
 		margin-right: 6.933333%;
 	}
@@ -340,7 +356,7 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 	top: 100px;
 	left: 8.33333%;
 	min-width: 350px;
-	
+
 	.vertical-nav {
 		border-left: 3px solid #696969;
 		ul {
@@ -499,7 +515,7 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 	a:hover {
 		text-decoration: none;
 	}
-	.smallBtn { 
+	.smallBtn {
 		background-color: $hoverColorText;
 		color: #fff;
 		width: 100%
@@ -526,7 +542,7 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 		background-color: #fff;
 		color: #40a6da !important;
 	}
-	
+
 	.hidden-md.hidden-sm.hidden-xs {
 		.cta-huls {
 			position: absolute;
@@ -585,7 +601,7 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 		position: absolute;
 		color: #fff;
 		font-family: $specialTextMedium;
-		
+
 		.cta-inner {
 			position: relative;
 			text-align: center;
@@ -654,11 +670,20 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 			font-family: $specialTextSemibold;
 			font-size: 36px;
 			padding-top: 20px;
+            &.smallBtnDisabled {
+              background-color: gray;
+            }
 		}
 		.smallBtn:hover {
 			color: $footerColorText;
 			background-color: transparent;
 			border-color: $footerColorText;
+            &.smallBtnDisabled {
+              background-color: gray;
+              color: lightgray;
+              cursor: not-allowed;
+              border-color: gray;
+            }
 		}
 	}
 	.playbtn {
@@ -799,7 +824,7 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 }
 .contribute {
 	background-color: #e9e9e9;
-	
+
 	.col-md-4 a {
 		display: block;
 		max-width: 180px;
@@ -821,7 +846,7 @@ a:hover, a:focus, .scrolltonext:hover, .scrolltonext:focus {
 }
 .builtwith {
 	background-color: #e9e9e9;
-	
+
 	.col-md-4 a {
 		display: block;
 		max-width: 180px;
@@ -867,7 +892,7 @@ p {
 footer {
 	margin-top: 200px;
 }
-.footer_references { 
+.footer_references {
 	background-color: #40a6da;
 
 	#slider_references {
@@ -1124,7 +1149,7 @@ footer {
 		.counterName {
 			font-size: 18px;
 		}
-		
+
 	}
 }
 @media screen and (max-width: 1914px){
@@ -1393,7 +1418,7 @@ footer {
     		font-size: 24px;
     		position: relative;
 		}
-		.col-md-8 { 
+		.col-md-8 {
 			padding-left: 15px !important;
 			padding-right: 15px !important;
 		}
@@ -1455,7 +1480,7 @@ footer {
     				z-index: 998;
     			}
 			}
-			.playbtn { 
+			.playbtn {
 			    right: 50%;
 			    margin-right: -50px;
 			    bottom: 74px;
@@ -1501,7 +1526,7 @@ footer {
 	footer .socials ul li a {
 		font-size: 28px;
 	}
-	.contribute {		
+	.contribute {
 		.col-md-4 a {
 			max-width: 120px;
 			margin-bottom: 30px;
